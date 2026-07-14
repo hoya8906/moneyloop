@@ -140,3 +140,12 @@
 
 /* Coin tier styles */
 .coin.silver{background:linear-gradient(145deg,#fff,#cfd8dc);border-color:#78909c;color:#31424a}.coin.goldcoin{background:linear-gradient(145deg,#fff6b0,#ffbf2f);border-color:#b87800;color:#4f3100;box-shadow:0 0 10px #ffd45f88}.coin.diamondcoin{background:linear-gradient(145deg,#eaffff,#8ee8ff 45%,#b99cff);border-color:#4f8cff;color:#12335a;box-shadow:0 0 12px #8ee8ff99}.coin.note{border-radius:10px;background:linear-gradient(145deg,#eaffd7,#94d68b);border-color:#2f7d32;color:#123b16;width:52px!important}.coin.gem{background:linear-gradient(145deg,#fff,#83f1ff 40%,#d08cff);border-color:#7b35c9;color:#351064;clip-path:polygon(50% 0,92% 28%,76% 100%,24% 100%,8% 28%);box-shadow:0 0 14px #ba8cffaa}
+
+/* Graphic coin tier overrides */
+.coin.cash,.coin.silver,.coin.goldcoin,.coin.diamondcoin{font-weight:1000;font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;text-shadow:0 1px 0 #fff8;display:grid;place-items:center;border-radius:50%}
+.coin.cash{background:radial-gradient(circle at 32% 28%,#fff6be 0 13%,#d58a27 14% 58%,#9b5715 59% 100%);border-color:#7b3f0d;color:#fff7c8;box-shadow:inset -3px -4px 0 #6d360955,inset 3px 3px 0 #fff4,2px 3px 0 #26170e}
+.coin.silver{background:radial-gradient(circle at 32% 28%,#fff 0 13%,#dfe7ea 14% 58%,#8fa2ad 59% 100%);border-color:#627784;color:#30454f;box-shadow:inset -3px -4px 0 #455a6455,inset 3px 3px 0 #fff8,2px 3px 0 #26170e}
+.coin.goldcoin{background:radial-gradient(circle at 32% 28%,#fff8b8 0 13%,#ffd45f 14% 58%,#d18a00 59% 100%);border-color:#8d5600;color:#5a3500;box-shadow:inset -3px -4px 0 #8d560055,inset 3px 3px 0 #fff8,0 0 12px #ffd45faa,2px 3px 0 #26170e}
+.coin.diamondcoin{background:radial-gradient(circle at 34% 26%,#fff 0 12%,#aef7ff 13% 48%,#7e9dff 49% 76%,#7b45cc 77% 100%);border-color:#4f60c9;color:#fff;text-shadow:0 1px 2px #123;clip-path:polygon(50% 0,92% 24%,100% 65%,50% 100%,0 65%,8% 24%);box-shadow:0 0 13px #8ee8ff99,2px 3px 0 #26170e}
+.coin.note{border-radius:9px!important;background:linear-gradient(135deg,#eaffd7,#abdf93 48%,#6eaa60);border-color:#2f7d32;color:#143c18;width:54px!important;height:34px!important;font-size:21px;box-shadow:inset 0 0 0 3px #ffffff77,2px 3px 0 #26170e}
+.coin.gem{background:linear-gradient(145deg,#fff,#83f1ff 40%,#d08cff);border-color:#7b35c9;color:#351064;clip-path:polygon(50% 0,92% 28%,76% 100%,24% 100%,8% 28%);box-shadow:0 0 14px #ba8cffaa,2px 3px 0 #26170e;font-size:24px}
