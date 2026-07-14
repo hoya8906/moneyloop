@@ -89,3 +89,14 @@
   .board{max-height:min(50dvh,calc(100vw - 6px))}
   .side .panel:first-child{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+
+.hidden{display:none!important}
+
+/* Readable mobile controls v2 */
+@media(max-width:640px) and (orientation:portrait){
+  .topStats{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.pill{padding:4px 5px}.pill span{font-size:9.5px}.pill b{font-size:12px}
+  .actions{gap:4px}.actions button{font-size:12px;line-height:1.05;padding:7px 7px;flex:0 0 auto}.mainHead .actions{overflow-x:auto;justify-content:flex-start}
+  .board{max-height:min(52dvh,calc(100vw - 6px))}.hud{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.box{min-height:31px;padding:4px}.box span{font-size:9px}.box b{font-size:11px}
+  .side{grid-template-columns:1fr;gap:4px}.side .panel:first-child{grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}.marketState{font-size:12px}#phaseState,.tiny,#marketLeft,#creditState,#emotionState,#incomeState,#saveState{font-size:10px;line-height:1.15}.goalBox{font-size:10.5px;padding:4px 6px}
+  #moneyPanel,#emotionPanel{grid-template-columns:repeat(2,minmax(0,1fr));gap:3px}.res{padding:4px}.resTop{font-size:10px}.bar{height:5px}
+}
