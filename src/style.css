@@ -120,3 +120,6 @@
 /* HomeQuest-like minimal resource row */
 .topStats{display:flex!important;gap:10px;align-items:center;flex-wrap:wrap}.resChip{all:unset;display:inline-flex;align-items:center;gap:4px;color:var(--ink);font-weight:800;font-size:13px;line-height:1;cursor:pointer}.resChip span{font-size:15px;opacity:.9}.resChip b{font-size:13px;white-space:nowrap}.resChip.bad b{color:var(--red)}.goalBox{cursor:pointer;text-align:left;color:var(--ink);font-family:inherit}.goalBox:active{transform:translate(1px,1px)}.spawnBadge{cursor:pointer}.spawnBadge i{background:linear-gradient(90deg,#b9f7c7,#f7df7b)}
 @media(max-width:640px) and (orientation:portrait){.topStats{gap:7px}.resChip{font-size:12px}.resChip span{font-size:14px}.resChip b{font-size:12px}.brand h1{font-size:17px}.goalPanel .goalBox{font-size:12.5px}.spawnBadge{padding:9px 12px}}
+
+/* Special coin types */
+.coin.double{background:linear-gradient(145deg,#fff8df,#9cffc8);border-color:#0f9b5c;color:#095f38}.coin.lucky{background:linear-gradient(145deg,#fff,#ffd45f 45%,#ff8ad8);border-color:#8b4cff;color:#26170e;animation:luckyPulse 1.1s ease-in-out infinite}@keyframes luckyPulse{0%,100%{filter:saturate(1)}50%{filter:saturate(1.6) brightness(1.1)}}
