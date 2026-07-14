@@ -156,3 +156,12 @@
 .coin.goldcoin{background:linear-gradient(180deg,#fff2a0 0%,#ffc233 58%,#b87300 100%);border-color:#8d5600;color:#5a3500;box-shadow:inset 0 3px 0 #fff8,inset 0 -4px 0 #0002,0 0 8px #ffd45f88,2px 4px 0 #26170e}
 .coin.diamondcoin{height:26px!important;border-radius:12px;clip-path:none;background:linear-gradient(180deg,#e8ffff 0%,#8ee8ff 48%,#6c86e9 100%);border-color:#4f60c9;color:#fff;text-shadow:0 1px 2px #123}
 .coin.note{height:30px!important}.coin.gem{height:40px!important}
+
+/* Natural raised coin shape overrides */
+.coin.cash,.coin.silver,.coin.goldcoin,.coin.diamondcoin{border-radius:50%!important;height:auto!important;aspect-ratio:1/1;display:grid;place-items:center;font-weight:1000;font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;font-size:18px;line-height:1;border:3px solid currentColor;text-shadow:0 1px 0 rgba(255,255,255,.75);box-shadow:inset 0 2px 2px rgba(255,255,255,.78),inset 0 -3px 5px rgba(0,0,0,.20),inset 0 0 0 5px rgba(255,255,255,.18),0 3px 5px rgba(38,23,14,.30);clip-path:none!important;transform:none}
+.coin.cash{color:#8a4f13;background:radial-gradient(circle at 35% 28%,#fff0aa 0 11%,#d8902d 12% 62%,#a65c18 63% 100%);border-color:#8a4f13}
+.coin.silver{color:#61747d;background:radial-gradient(circle at 35% 28%,#ffffff 0 11%,#d8e1e5 12% 62%,#9dafb8 63% 100%);border-color:#61747d}
+.coin.goldcoin{color:#9a6500;background:radial-gradient(circle at 35% 28%,#fff7b4 0 11%,#ffd45f 12% 62%,#d99708 63% 100%);border-color:#9a6500;box-shadow:inset 0 2px 2px rgba(255,255,255,.85),inset 0 -3px 5px rgba(0,0,0,.22),inset 0 0 0 5px rgba(255,255,255,.22),0 0 10px rgba(255,212,95,.45),0 3px 5px rgba(38,23,14,.30)}
+.coin.diamondcoin{color:#4d70c8;background:radial-gradient(circle at 35% 28%,#ffffff 0 11%,#b9f6ff 12% 55%,#8ea9ff 56% 100%);border-color:#4d70c8;text-shadow:0 1px 0 rgba(255,255,255,.8)}
+.coin.cash::before,.coin.silver::before,.coin.goldcoin::before,.coin.diamondcoin::before{content:"";position:absolute;inset:7px;border-radius:50%;border:2px solid rgba(255,255,255,.35);box-shadow:inset 0 1px 2px rgba(0,0,0,.12);pointer-events:none}
+.coin.cash::after,.coin.silver::after,.coin.goldcoin::after,.coin.diamondcoin::after{content:"";position:absolute;left:25%;top:18%;width:28%;height:18%;border-radius:50%;background:rgba(255,255,255,.38);filter:blur(.3px);pointer-events:none}
