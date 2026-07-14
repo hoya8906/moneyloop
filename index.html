@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Money Loop v0.7</title>
+<link rel="stylesheet" href="./src/style.css"/>
+<link rel="manifest" href="./public/manifest.json"/>
+<meta name="theme-color" content="#f6e8bd"/>
+</head>
+<body>
+<div class="app"><header class="top"><div class="brand"><h1>💸 MONEY LOOP v0.7</h1><div>$ 기본 재화 · ₿ 암호화폐 · 신용등급/멘탈/탐욕/대출상품</div></div><div id="topStats" class="topStats"></div><button class="settingsBtn" onpointerdown="openModal('settings')">⚙️</button></header>
+<div class="layout"><main class="panel main"><div class="mainHead"><h2>🪙 머니판</h2><div class="actions"><button onpointerdown="openModal('upgrade')">업그레이드</button><button onpointerdown="openModal('research')">해금</button><button onpointerdown="openModal('loan')">대출</button><button onpointerdown="openModal('challenge')">도전</button><button onpointerdown="openModal('log')">로그</button></div></div><div id="board" class="board"><div class="devDot" title="."></div></div><div><div id="skills" class="actions"></div><div id="hud" class="hud" style="margin-top:6px"></div></div></main>
+<aside class="side"><section class="panel"><h2>📌 종합 현황</h2><div id="marketState" class="marketState"></div><div id="marketLeft" class="tiny"></div><div id="creditState" class="tiny"></div><div id="emotionState" class="tiny"></div><div id="incomeState" class="tiny"></div><div id="saveState" class="tiny" style="margin-top:5px"></div></section><section class="panel"><h2>💰 자산</h2><div id="moneyPanel"></div></section><section class="panel"><h2>🫀 지표</h2><div id="emotionPanel"></div></section><section class="panel"><h2>빠른 메뉴</h2><div class="quickBtns"><button onpointerdown="study()">공부</button><button onpointerdown="depositHalf()">절반 예금</button><button onpointerdown="repayDebt()">상환</button><button onpointerdown="openModal('settings')">설정</button></div></section></aside></div><div class="footer">D:\work\hermes\money-loop\money_loop.html · save slot: moneyLoopV07</div></div>
+<div id="modal" class="modal"><div class="modalBox"><div class="modalHead"><h2 id="modalTitle">메뉴</h2><button onpointerdown="closeModal()">닫기</button></div><div id="modalBody" class="cards"></div></div></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

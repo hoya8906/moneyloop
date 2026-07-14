@@ -1,0 +1,9 @@
+{
+  "name": "Money Loop",
+  "short_name": "MoneyLoop",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f6e8bd",
+  "theme_color": "#f6e8bd",
+  "icons": [{"src":"./icon.svg","sizes":"any","type":"image/svg+xml"}]
+}
