@@ -131,3 +131,12 @@
 /* Accordion skill trees */
 .skillTree{border:2px solid var(--line);border-radius:12px;background:#fff;margin:8px 0;overflow:hidden;box-shadow:2px 2px 0 var(--shadow)}.skillTree summary{cursor:pointer;list-style:none;padding:10px 12px;font-weight:1000;background:#fff8df;display:flex;justify-content:space-between;gap:8px;align-items:center}.skillTree summary::-webkit-details-marker{display:none}.skillTree summary span{font-size:12px;color:var(--muted);font-weight:800}.skillTree[open] summary{border-bottom:1px solid #26170e33}.skillTree .skillRow{margin:8px}
 @media(max-width:640px){.skillTree summary{padding:9px;font-size:14px;align-items:flex-start;flex-direction:column}.skillTree summary span{font-size:11px}}
+
+
+/* Touch position indicator and new item badges */
+.touchRing{position:absolute;z-index:8;width:44px;height:44px;margin:-22px 0 0 -22px;border:2px solid rgba(38,23,14,.55);border-radius:50%;background:rgba(255,255,255,.22);box-shadow:0 0 0 6px rgba(255,212,95,.22);pointer-events:none;animation:touchRing .42s ease-out forwards}@keyframes touchRing{0%{transform:scale(.55);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+.hasBadge{position:relative}.hasBadge::after{content:"";position:absolute;right:-2px;top:-2px;width:9px;height:9px;border:2px solid #fff;border-radius:50%;background:#e74d61;box-shadow:0 1px 2px #0004}.logIconBtn.hasBadge::after,.iconBtn.hasBadge::after{right:-2px;top:-2px}
+@media(max-width:640px) and (orientation:portrait){.board{height:min(76dvh,calc(100vw + 82px));max-height:min(76dvh,calc(100vw + 82px));min-height:min(64dvh,calc(100vw + 32px))}.touchRing{width:40px;height:40px;margin:-20px 0 0 -20px}}
+
+/* Coin tier styles */
+.coin.silver{background:linear-gradient(145deg,#fff,#cfd8dc);border-color:#78909c;color:#31424a}.coin.goldcoin{background:linear-gradient(145deg,#fff6b0,#ffbf2f);border-color:#b87800;color:#4f3100;box-shadow:0 0 10px #ffd45f88}.coin.diamondcoin{background:linear-gradient(145deg,#eaffff,#8ee8ff 45%,#b99cff);border-color:#4f8cff;color:#12335a;box-shadow:0 0 12px #8ee8ff99}.coin.note{border-radius:10px;background:linear-gradient(145deg,#eaffd7,#94d68b);border-color:#2f7d32;color:#123b16;width:52px!important}.coin.gem{background:linear-gradient(145deg,#fff,#83f1ff 40%,#d08cff);border-color:#7b35c9;color:#351064;clip-path:polygon(50% 0,92% 28%,76% 100%,24% 100%,8% 28%);box-shadow:0 0 14px #ba8cffaa}
